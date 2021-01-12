@@ -26,14 +26,17 @@
         }
 
         Usuario.prototype.getFullName = function () {
-           console.log(`Nombre y Apellido : ${this.nombre + this.apellido}`);
-        }
+            return(
+           console.log(`Nombre y Apellido : ${this.nombre + this.apellido}`)
+            )}
         Usuario.prototype.addMascota = function (mascota) {
             this.mascotas.push(mascota)
 
         }
         Usuario.prototype.getMascotas = function () {
+            return(
             console.log(this.mascotas.length)
+            )
         }
 
         Usuario.prototype.addBook = function (nombre, autor) {
@@ -43,9 +46,9 @@
             var nombresLibros = this.libros.map(function (x) {
                 return x.nombre;
             });
-
+            return(
             console.log(nombresLibros)
-        }
+            )}
         let Juan = new Usuario('Juan', 'Gonzales', ['perro', 'tortuga', 'canario'], [{ nombre: 'Cien años de soledad', autor: 'Gabriel García Márquez' }, { nombre: 'Fausto', autor: 'Johann Wolfgang von Goethe' }]);
         let Carlos = new Usuario('Carlos', 'Perez', ['gato', 'hamster'], [{ nombre: 'Cuentos infantiles', autor: 'Chinua Achebe' }, { nombre: 'Divina Comedia', autor: 'Dante Alighieri' }, { nombre: 'El extranjero', autor: 'Albert Camus' }]);
         let Mariana = new Usuario('Mariana', 'Rodriguez', ['loro', 'perro', 'gato'], [{ nombre: 'Don Quijote de la Mancha', autor: 'Miguel de Cervantes' }, { nombre: 'Grandes Esperanzas', autor: 'Charles Dickens' }]);
