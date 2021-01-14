@@ -28,18 +28,15 @@
 
 
             getFullName() {
-                return (
-                    console.log(`Nombre y Apellido : ${this.nombre + this.apellido}`)
-                )
+
+            return (`Nombre y Apellido : ${this.nombre + this.apellido}`);
             }
             addMascota(mascota) {
                 this.mascotas.push(mascota)
 
             }
             getMascotas() {
-                return (
-                    console.log(this.mascotas.length)
-                )
+                return(this.mascotas.length)
             }
 
             addBook(nombre, autor) {
@@ -49,9 +46,8 @@
                 var nombresLibros = this.libros.map(function (x) {
                     return x.nombre;
                 });
-                return (
-                    console.log(nombresLibros)
-                )
+
+               return(nombresLibros)
             }
         }
 

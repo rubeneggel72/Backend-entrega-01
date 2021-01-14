@@ -16,7 +16,7 @@
 
         // Escribí tu código acá 👇🏼👇🏼
         console.log('👋🏼👋🏼 Me ves en la terminal del browser');
-
+      
 
         function Usuario(nombre, apellido, mascotas, libros) {
             this.nombre = nombre;
@@ -26,18 +26,14 @@
         }
 
         Usuario.prototype.getFullName = function () {
-            return (
-                console.log(`Nombre y Apellido : ${this.nombre + this.apellido}`)
-            )
+           return(`Nombre y Apellido : ${this.nombre + this.apellido}`);
         }
         Usuario.prototype.addMascota = function (mascota) {
             this.mascotas.push(mascota)
 
         }
         Usuario.prototype.getMascotas = function () {
-            return (
-                console.log(this.mascotas.length)
-            )
+            return (this.mascotas.length)
         }
 
         Usuario.prototype.addBook = function (nombre, autor) {
@@ -47,9 +43,8 @@
             var nombresLibros = this.libros.map(function (x) {
                 return x.nombre;
             });
-            return (
-                console.log(nombresLibros)
-            )
+
+            return(nombresLibros)
         }
         let Juan = new Usuario('Juan', 'Gonzales', ['perro', 'tortuga', 'canario'], [{ nombre: 'Cien años de soledad', autor: 'Gabriel García Márquez' }, { nombre: 'Fausto', autor: 'Johann Wolfgang von Goethe' }]);
         let Carlos = new Usuario('Carlos', 'Perez', ['gato', 'hamster'], [{ nombre: 'Cuentos infantiles', autor: 'Chinua Achebe' }, { nombre: 'Divina Comedia', autor: 'Dante Alighieri' }, { nombre: 'El extranjero', autor: 'Albert Camus' }]);
